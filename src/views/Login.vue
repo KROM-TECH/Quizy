@@ -2,14 +2,15 @@
   <div class="card login-div">
     <h1>Quizy</h1>
     <form>
-      <div class="form">
-        <label for="username">Username</label>
-        <input class="username user-input" type="username" placeholder="Username" />
-      </div>
-      <div class="form">
-        <label for="password">password</label>
-        <input class="password user-input" type="password" placeholder="Password" />
-      </div>
+      <div class="form-group">
+                      <label for="username">Username</label>
+                      <input type="username" class="form-control" id="username" placeholder="Username">
+                    </div>
+      <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+     
 
       <button class="btn">Login</button>
 
