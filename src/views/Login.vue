@@ -1,5 +1,5 @@
 <template>
-  <div class="login-div">
+  <div class="card login-div">
     <h1>Quizy</h1>
     <form>
       <div class="form">
@@ -12,13 +12,15 @@
       </div>
 
       <button class="btn">Login</button>
-    </form>
 
-    <div class="flex">
+        <div class="flex mt-3">
       <p>Create an acc</p>
       
       <p>Forget Password</p>
     </div>
+    </form>
+
+  
   </div>
 </template>
 
@@ -28,7 +30,6 @@
 
 <style scoped>
 p{
-  margin:0 2.9rem;
   cursor: pointer;
 }
   .form {
@@ -43,9 +44,10 @@ p{
   .flex {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size:11px;
+    justify-content: space-between;
+    font-size:10px;
     color:#a0a0a0
+    
   }
   h1 {
     font-size: 3.5rem;
@@ -54,6 +56,7 @@ p{
     letter-spacing: 0.8rem;
     font-variant: all-petite-caps;
     font-style: italic;
+    text-align: center;
   }
   .body {
   }
@@ -90,7 +93,7 @@ p{
     box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
     background: transparent;
     height: 44px;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     padding: 0.375rem 1.375rem;
     margin-bottom: 20px;
