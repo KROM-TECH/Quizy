@@ -101,6 +101,7 @@ p{
   }
 
   .login-div {
+        padding: 1rem;
     height: 35rem;
     border-radius: 40px;
     background: #ecf0f3;
