@@ -1,4 +1,5 @@
 <template>
+<div class="div">
   <div class="card login-div">
     <h1>Quizy</h1>
     <form>
@@ -12,16 +13,25 @@
                     </div>
      
 
-      <button class="btn btn-outline-primary btn-fw">Login</button>
+      <button type="button" class="btn btn-outline-primary btn-fw">Login</button>
 
         <div class="flex mt-3">
       <p>Create an acc</p>
       
       <p>Forget Password</p>
     </div>
-    </form>
-
-  
+        <div class="mb-2 d-flex">
+                        <button type="button" class="btn btn-outline-google auth-form-btn flex-grow ">
+                    <i class="mdi mdi-google mr-2"></i>Google
+                  </button>         
+                </div>
+    <div class="mb-2 d-flex">
+                  <button type="button" class="btn btn-outline-facebook auth-form-btn flex-grow ">
+                    <i class="mdi mdi-facebook mr-2"></i>Facebook
+                  </button>         
+                </div>
+    </form>  
+  </div>
   </div>
 </template>
 
@@ -30,6 +40,11 @@
 </script>
 
 <style scoped>
+.div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 p{
   cursor: pointer;
 }
@@ -70,6 +85,7 @@ p{
     display: flex;
     text-align: center;
     flex-direction: column;
+    max-width:20rem;
   }
 label{
   text-align: start;

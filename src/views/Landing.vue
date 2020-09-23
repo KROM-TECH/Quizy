@@ -94,6 +94,6 @@ button:hover{
     margin-top: 0.9rem;
     font-size: larger;
     font-weight: 600;
-    background-color: #75c5c557;
+    background-color: #6145ec8e;
   }
 </style>
