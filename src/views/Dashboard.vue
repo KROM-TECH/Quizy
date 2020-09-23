@@ -8,7 +8,7 @@
   
 
   <div class="content-wrapper d-flex justify-content-center" style="padding: 2.5rem 1.5rem;">
-    <div class="row" style="width:75%">
+    <div class="row" style="">
             <div class="col-md-6 col-lg-6 col-xl-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -73,6 +73,7 @@
                 </div>
               </div>
             </div>
+            <div class="d-flex justify-content-center" style="width:100%">
             <div class="col-md-6 col-lg-6 col-xl-6 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
@@ -88,6 +89,7 @@
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
   </div>
