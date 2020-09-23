@@ -85,7 +85,8 @@ p{
     display: flex;
     text-align: center;
     flex-direction: column;
-    max-width:20rem;
+    max-width:50rem;
+    flex-basis: 100rem;
   }
 label{
   text-align: start;

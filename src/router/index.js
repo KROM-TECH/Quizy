@@ -22,6 +22,12 @@ const routes = [
     component: () =>
       import("../views/Dashboard.vue")
   },
+  {
+    path: "/game",
+    name: "Dashboard",
+    component: () =>
+      import("../views/Game.vue")
+  },
 ];
 
 const router = new VueRouter({
