@@ -13,7 +13,7 @@
                     </div>
      
 
-      <button type="button" class="btn btn-outline-primary btn-fw">Login</button>
+      <button type="button" class="btn btn-outline-danger btn-fw">Login</button>
 
         <div class="flex mt-3">
       <p>Create an acc</p>

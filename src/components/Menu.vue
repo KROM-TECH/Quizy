@@ -1,0 +1,55 @@
+<template>
+  <div>
+    <button type="button" class="btn btn-inverse-danger btn-icon Mbutton" @click="change">
+      <i :class="menu.sign"></i>
+    </button>
+
+    <div class="card" v-if="!menu.show">
+      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">View Dashboard</router-link>
+      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Play a Game</router-link>
+      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Create a Game</router-link>
+      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Refer a Friend</router-link>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'Menu',
+    data() {
+      return {
+        menu: { show: 'true', sign: 'mdi mdi-menu' }
+      };
+    },
+    methods: {
+      change() {
+        this.menu.show = !this.menu.show;
+        if (this.menu.sign == 'mdi mdi-menu') {
+          this.menu.sign = 'mdi mdi-close';
+        } else {
+          this.menu.sign = 'mdi mdi-menu';
+        }
+      }
+    }
+  };
+</script>
+
+<style scoped>
+  .card {
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    position: absolute !important;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Mbutton {
+    position: fixed;
+    z-index: 10;
+    right: 10px;
+    top: 10px;
+  }
+</style>

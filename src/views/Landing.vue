@@ -27,7 +27,7 @@
 <style scoped>
 a{
   text-decoration: none;
-  color: #6045ec;
+  color: inherit;
 }
 a:hover{
   color: #fff;
@@ -40,11 +40,11 @@ p{
 button{
      padding: 10px;
     margin: 1rem;
-     background-color: rgba(96, 69, 236, 0.2);
+     background-color:rgba(240, 38, 50, 0.2);
     background-image: none;
     border-color: rgba(96, 69, 236, 0);
     border: none;
-    color: #6045ec;
+    color: #f02632;
     outline: none;
     cursor: pointer;
     font-size: 0.875rem;
@@ -55,8 +55,9 @@ button{
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 button:hover{
-  background-color:#6045ec;
-  color: #fff;
+color: #fff !important;
+background-color: #f02632;
+border-color: #f02632;
 }
   .body {
     text-align: center;  
@@ -94,6 +95,6 @@ button:hover{
     margin-top: 0.9rem;
     font-size: larger;
     font-weight: 600;
-    background-color: #6145ec8e;
+    background-color: rgba(240, 38, 50, 0.2);;
   }
 </style>
