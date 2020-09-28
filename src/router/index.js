@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: "/game",
-    name: "Dashboard",
+    name: "Game",
     component: () =>
       import("../views/Game.vue")
   },

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type="button" class="btn btn-inverse-primary btn-icon Mbutton" @click="change">
+    <button type="button" id="menu" class="btn btn-inverse-primary btn-icon Mbutton" @click="change">
       <i :class="menu.sign"></i>
     </button>
 
@@ -29,7 +29,23 @@
         } else {
           this.menu.sign = 'mdi mdi-menu';
         }
+      },
+      scroll(){
+        let prevScrollpos = window.pageYOffset;
+  window.addEventListener('scroll', ()=> {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("#menu").style.top = "0";
+  } else {
+    document.querySelector("#menu").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+} );
       }
+    },
+
+    created(){
+    this.scroll()
     }
   };
 </script>
