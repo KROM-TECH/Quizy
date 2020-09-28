@@ -40,6 +40,12 @@ const routes = [
     component: () =>
       import("../components/Loader.vue")
   },
+  {
+    path: "/select",
+    name: "Select",
+    component: () =>
+      import("../views/Select.vue")
+  },
 ];
 
 const router = new VueRouter({

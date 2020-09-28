@@ -13,6 +13,16 @@
     <li></li>
     <li></li>
     <li></li>
+    <ul class="nav nav-tabs mb-3">
+                
+                    <div class="nav-item"  @click="select('quiz')">
+                      <a  :class="[active == 'quiz' ? 'active' : '', 'nav-link', 'tab']"   role="tab" aria-controls="Quiz" >Quiz</a>
+                    </div>
+                    <p class="m-3">Or</p>
+                    <div class="nav-item" @click="select('flash')">
+                      <a  :class="[active == 'flash' ? 'active' : '', 'nav-link', 'tab']"  role="tab" aria-controls="Flash Card" >Flash Card</a>
+                    </div>
+                  </ul>
     <div class="form-group">
       <h2 for="gameCode">Enter Game Code</h2>
       <input type="text" class="form-control" id="gameCode" placeholder="Code" />
@@ -28,11 +38,28 @@
   export default {
     components: {
       Menu
-    }
+    },
+    data(){
+      return{
+        active:'quiz',
+      }
+    },
+    methods:{
+      select(act){
+        this.active = act
+      }
+
+    },
   };
 </script>
 
 <style scoped>
+.nav-item{
+  cursor: pointer;
+}
+.tab{
+  font-size: 1rem;
+}
   input {
     max-width: 280px;
   }

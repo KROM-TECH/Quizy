@@ -7,7 +7,7 @@
     <div class="card" v-if="!menu.show">
       <router-link class="btn btn-inverse-dark btn-fw" to="/dashboard" style="margin: 1rem;">View Dashboard</router-link>
       <router-link class="btn btn-inverse-dark btn-fw" to="/play" style="margin: 1rem;">Play a Game</router-link>
-      <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Create a Game</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/select" style="margin: 1rem;">Create a Game</router-link>
       <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Withdraw Earnings</router-link>
       <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Refer a Friend</router-link>
     </div>
