@@ -28,6 +28,12 @@ const routes = [
     component: () =>
       import("../views/Game.vue")
   },
+  {
+    path: "/play",
+    name: "Play",
+    component: () =>
+      import("../views/Play.vue")
+  },
 ];
 
 const router = new VueRouter({

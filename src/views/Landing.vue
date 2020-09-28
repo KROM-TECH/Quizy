@@ -12,8 +12,8 @@
         <li>And so much more</li>
       </ul>
       <div>
-        <button> <router-link to="login">Create an Account</router-link> </button>
-        <button>Tell a Friend</button>
+        <router-link to="login"><button class="btn btn-inverse-primary btn-fw"> Create an Account </button></router-link>
+        <button class="btn btn-inverse-primary btn-fw mx-3">Tell a Friend</button>
       </div>
     </div>
 </template>
@@ -37,14 +37,14 @@ p{
   font-weight: 300;
 }
 
-button{
+/* button{
      padding: 10px;
     margin: 1rem;
      background-color:rgba(240, 38, 50, 0.2);
     background-image: none;
     border-color: rgba(96, 69, 236, 0);
     border: none;
-    color: #f02632;
+    color: #15a2abb0;
     outline: none;
     cursor: pointer;
     font-size: 0.875rem;
@@ -58,7 +58,7 @@ button:hover{
 color: #fff !important;
 background-color: #f02632;
 border-color: #f02632;
-}
+} */
   .body {
     text-align: center;  
     padding: 0rem 1rem !important;  
@@ -95,6 +95,6 @@ border-color: #f02632;
     margin-top: 0.9rem;
     font-size: larger;
     font-weight: 600;
-    background-color: rgba(240, 38, 50, 0.2);;
+    background-color: #6145ec61;
   }
 </style>

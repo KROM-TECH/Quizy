@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type="button" class="btn btn-inverse-danger btn-icon Mbutton" @click="change">
+    <button type="button" class="btn btn-inverse-primary btn-icon Mbutton" @click="change">
       <i :class="menu.sign"></i>
     </button>
 
@@ -38,8 +38,7 @@
   .card {
     width: 100vw;
     height: 100vh;
-    background-color: red;
-    position: absolute !important;
+    position: fixed !important;
     z-index: 5;
     display: flex;
     flex-direction: column;
