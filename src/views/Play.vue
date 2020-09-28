@@ -13,8 +13,7 @@
     <li></li>
     <li></li>
     <li></li>
-    <ul class="nav nav-tabs mb-3">
-                
+    <ul class="nav nav-tabs mb-3">                
                     <div class="nav-item"  @click="select('quiz')">
                       <a  :class="[active == 'quiz' ? 'active' : '', 'nav-link', 'tab']"   role="tab" aria-controls="Quiz" >Quiz</a>
                     </div>
@@ -45,11 +44,10 @@
       }
     },
     methods:{
-      select(act){
+     select(act){
         this.active = act
       }
-
-    },
+    }, 
   };
 </script>
 

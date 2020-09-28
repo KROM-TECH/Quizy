@@ -15,23 +15,30 @@
 
       <h1>Select Game Type</h1>
       <div class="row">
-        <div style="width:40%; height:100%">
-          <div type="button" class="btn btn-outline-dark btn-fw m-2" style="height:100%">
-            <img src="../assets/quiz.svg" class="img-fluid" alt />
-            
+        <div style="width:40%; height:100%" @click="select('quiz')">
+          <div
+            type="button"
+            :class="[active == 'quiz' ? 'active' : '', 'btn', 'btn-outline-light', 'btn-fw']"
+            style="height:100%"
+          >
+            <img src="../assets/quiz.svg" class="img-fluid" alt="quiz" />
           </div>
-          <h2 >Quiz</h2>
+          <h2>Quiz</h2>
         </div>
-
+    
         <!-- ================================================================================================================= -->
-        <div style="width:40%; height:100%">
-          <div type="button" class="btn btn-outline-dark btn-fw m-2" style="height:100%">
-            <img src="../assets/flash.svg" class="img-fluid" alt />
-           
+        <div style="width:40%; height:100%" @click="select('flash')">
+          <div
+            type="button"
+            :class="[active == 'flash' ? 'active' : '', 'btn', 'btn-outline-light', 'btn-fw']"
+            style="height:100%"
+          >
+            <img src="../assets/flash.svg" class="img-fluid" alt="flash card" />
           </div>
-           <h2>Flash Card</h2>
+          <h2>Flash Card</h2>
         </div>
       </div>
+       <button type="button" class="btn btn-dark">Next</button>
     </div>
   </div>
 </template>
@@ -56,16 +63,28 @@ export default {
 </script>
 
 <style scoped>
-.btn{
-    padding: 2px !important;
+  .btn {
+    font-weight: 800;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 100%;
+    padding: 0.875rem 1.375rem;
+    max-width: 280px;
+  }
+.active {
+  background-color: #1c273c !important;
 }
-.row{
-justify-content: center
+.btn {
+  padding: 2px !important;
+  z-index: 10 !important;
+}
+.row {
+  justify-content: center;
 }
 .center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center !important;
 }
@@ -92,7 +111,7 @@ justify-content: center
   margin: 0;
   padding: 0;
   background: #f3f4f7;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .background li {
   position: absolute;
@@ -102,6 +121,7 @@ justify-content: center
   height: 20px;
   background: rgba(60, 44, 105, 0.2);
   animation: animate 19s linear infinite;
+   z-index: -1;
 }
 
 .background li:nth-child(0) {
