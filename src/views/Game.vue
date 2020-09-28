@@ -1,8 +1,18 @@
 <template>
 <div class="div">
   <div class="card login-div">
-    <h1>Loading...</h1>
-
+    <p>Lorem ipsum dolor sit 
+      amet consectetur adipisicing elit. M
+      ollitia laborum quas doloremque, architecto cum,
+       quasi iste et, laboriosam pariatur numquam inventore ne
+       que delectus vitae beatae provident! Voluptas porro expedita eaque.</p> 
+  </div>
+  <div class="center mt-2"><div class="badge badge-dark">view Image</div></div>
+  <div class="anwsers">
+    <button type="button" class="btn btn-outline-dark btn-lg mt-3"> Answer one</button>
+    <button type="button" class="btn btn-outline-dark btn-lg mt-3">Answer Two</button>
+    <button type="button" class="btn btn-outline-dark btn-lg mt-3">Answer Three</button>
+    <button type="button" class="btn btn-outline-dark btn-lg mt-3">Answer Four</button>
   </div>
   </div>
 </template>
@@ -12,8 +22,37 @@
 </script>
 
 <style scoped>
+.badge{
+  cursor: pointer;
+}
+.btn{
+  height: 48px;
+  width: 230px;
+  padding:1rem !important;
+}
+.anwsers{
+  margin-top: 50px;
+  max-width: 500px;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:600px) {
+  .anwsers{
+    justify-content: center;
+  }
+  .btn{
+    width:300px
+  }
+}
+p{
+  font-size: 1.3rem
+
+}
 .div{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -28,8 +67,9 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    max-width:50rem;
-    /* flex-basis: 100rem; */
+    width: 100%;
+    height: fit-content;
+    max-width:500px;
   }
 
 </style>

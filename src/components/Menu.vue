@@ -1,14 +1,15 @@
 <template>
   <div>
-    <button type="button" id="menu" class="btn btn-inverse-primary btn-icon Mbutton" @click="change">
+    <button type="button" id="menu" class="btn btn-inverse-dark btn-icon Mbutton" @click="change">
       <i :class="menu.sign"></i>
     </button>
 
     <div class="card" v-if="!menu.show">
-      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">View Dashboard</router-link>
-      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Play a Game</router-link>
-      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Create a Game</router-link>
-      <router-link class="btn btn-inverse-primary btn-fw" to="/home" style="margin: 1rem;">Refer a Friend</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/dashboard" style="margin: 1rem;">View Dashboard</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/play" style="margin: 1rem;">Play a Game</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Create a Game</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Withdraw Earnings</router-link>
+      <router-link class="btn btn-inverse-dark btn-fw" to="/home" style="margin: 1rem;">Refer a Friend</router-link>
     </div>
   </div>
 </template>

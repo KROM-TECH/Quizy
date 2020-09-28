@@ -9,7 +9,7 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="icon-wrap">
-                  <i class="mdi mdi-folder-outline" style="color:#6045ec"></i>
+                  <i class="mdi mdi-folder-outline" style="color:#1c273c"></i>
                 </div>
                 <div class="flex-right-height">
                   <p class="font-weight-bold mb-1">Total Quiz Created</p>
@@ -25,7 +25,7 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="icon-wrap">
-                  <i class="mdi mdi-cash-multiple" style="color:#6045ec"></i>
+                  <i class="mdi mdi-cash-multiple" style="color:#1c273c"></i>
                 </div>
                 <div class="flex-right-height">
                   <p class="font-weight-bold mb-1">Total Revenue</p>
@@ -41,7 +41,7 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="icon-wrap">
-                  <i class="mdi mdi-account-group-outline" style="color:#6045ec"></i>
+                  <i class="mdi mdi-account-group-outline" style="color:#1c273c"></i>
                 </div>
                 <div class="flex-right-height">
                   <p class="font-weight-bold mb-1">Total Player</p>
@@ -57,7 +57,7 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center">
                 <div class="icon-wrap">
-                  <i class="mdi mdi-account-outline" style="color:#6045ec"></i>
+                  <i class="mdi mdi-account-outline" style="color:#1c273c"></i>
                 </div>
                 <div class="flex-right-height">
                   <p class="font-weight-bold mb-1">Daily players</p>
@@ -74,7 +74,7 @@
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="icon-wrap">
-                    <i class="mdi mdi-book-open-variant" style="color:#6045ec"></i>
+                    <i class="mdi mdi-book-open-variant" style="color:#1c273c"></i>
                   </div>
                   <div class="flex-right-height">
                     <p class="font-weight-bold mb-1">Most played quiz</p>

@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  transition: 0.5s linear;
+  transition: 0.3s linear;
 }
 html{
   width: 100%;

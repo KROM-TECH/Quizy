@@ -12,8 +12,8 @@
         <li>And so much more</li>
       </ul>
       <div>
-        <router-link to="login"><button class="btn btn-inverse-primary btn-fw"> Create an Account </button></router-link>
-        <button class="btn btn-inverse-primary btn-fw mx-3">Tell a Friend</button>
+        <router-link to="login"><button class="btn btn-inverse-dark btn-fw"> Create an Account </button></router-link>
+        <button class="btn btn-inverse-dark btn-fw mx-3">Tell a Friend</button>
       </div>
     </div>
 </template>
@@ -95,6 +95,6 @@ border-color: #f02632;
     margin-top: 0.9rem;
     font-size: larger;
     font-weight: 600;
-    background-color: #6145ec61;
+    background-color: rgba(28, 39, 60, 0.2);
   }
 </style>

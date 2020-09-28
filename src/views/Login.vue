@@ -13,7 +13,7 @@
                     </div>
      
 
-      <button type="button" class="btn btn-outline-primary btn-fw">Login</button>
+      <button type="button" class="btn btn-outline-dark btn-fw">Login</button>
 
         <div class="flex mt-3">
       <p>Create an acc</p>
@@ -40,6 +40,9 @@
 </script>
 
 <style scoped>
+.form-control[data-v-26084dc2]:focus {
+    border-color: #1c273c;
+}
 .div{
   display: flex;
   justify-content: center;
