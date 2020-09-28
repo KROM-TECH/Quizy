@@ -34,6 +34,12 @@ const routes = [
     component: () =>
       import("../views/Play.vue")
   },
+  {
+    path: "/loader",
+    name: "Loader",
+    component: () =>
+      import("../components/Loader.vue")
+  },
 ];
 
 const router = new VueRouter({
