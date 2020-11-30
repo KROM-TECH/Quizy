@@ -8,13 +8,13 @@ const routes = [
     path: "/",
     name: "Landing",
     component: () =>
-      import("../views/Landing.vue")
+      import("@/views/general/Landing.vue")
   },
   {
     path: "/login",
     name: "Login",
     component: () =>
-      import("../views/Login.vue")
+      import("../views/auth/Login.vue")
   },
   {
     path: "/dashboard",
@@ -51,6 +51,12 @@ const routes = [
     name: "Upload",
     component: () =>
       import("../views/Upload.vue")
+  },
+  {
+    path: "/altupload",
+    name: "Altupload",
+    component: () =>
+      import("../views/AltUpload.vue")
   },
 ];
 

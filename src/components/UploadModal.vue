@@ -55,4 +55,7 @@ export default {
     letter-spacing: 2px;
     color: crimson;
 }
+.badge{
+  cursor:pointer
+}
 </style>
